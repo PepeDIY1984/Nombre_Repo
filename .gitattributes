@@ -1,2 +1,59 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Archivos de texturas (por ejemplo, PSD, PNG, TIFF, JPG, etc.)
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de modelos 3D
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.dae filter=lfs diff=lfs merge=lfs -text
+*.3ds filter=lfs diff=lfs merge=lfs -text
+*.max filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de audio (por ejemplo, WAV, MP3, OGG, etc.)
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de video (por ejemplo, MP4, AVI, MOV, etc.)
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de materiales (Unity)
+*.mat filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de texturas para Unity (también se incluyen las texturas 2D de Unity)
+*.tga filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de escena de Unity
+*.unity filter=lfs diff=lfs merge=lfs -text
+
+# Prefabs de Unity
+*.prefab filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de animación de Unity
+*.anim filter=lfs diff=lfs merge=lfs -text
+*.controller filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de configuración de Unity (project settings y otros)
+*.settings filter=lfs diff=lfs merge=lfs -text
+
+# Archivos binarios y otros
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.pdb filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de texto generados que pueden ser grandes
+*.json filter=lfs diff=lfs merge=lfs -text
+*.xml filter=lfs diff=lfs merge=lfs -text
+
+# Cualquier otro tipo de archivo que pueda ser grande o binario (ajusta según sea necesario)
+*.asset filter=lfs diff=lfs merge=lfs -text
+
